@@ -11,6 +11,7 @@ in Rust including but not limited to custom optimizers like lbfgs. Pull requests
 for now email me at ward.joshua92@yahoo.com.
 
 further oxidation of the camelid may follow..
+
 ---
 
 The rust bindings are mostly based on https://github.com/go-skynet/go-llama.cpp/
