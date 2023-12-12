@@ -28,9 +28,13 @@ edition = "2021"
 lazy_static = "1.4.0"
 
 [build-dependencies]
-cc = "1.0.79"
+cc = {version = "1.0.79", features = ["parallel"]}
 bindgen = "0.66.1"
+syn = "2.0.40"
+quote = "1.0.33"
+proc-macro2 = "1.0.70"
 
+#TODO: this may need another lib once/if we extract finetune and trainning
 [lib]
 name = "llama_cpp_rs"
 path = "src/lib.rs"
