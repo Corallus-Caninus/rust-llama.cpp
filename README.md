@@ -3,6 +3,15 @@
 [![Crates.io](https://img.shields.io/crates/v/llama_cpp_rs.svg?maxAge=2592000)](https://crates.io/crates/llama_cpp_rs)
 
 [LLama.cpp](https://github.com/ggerganov/llama.cpp) rust bindings.
+---
+This fork is attempting to create lower level bindings. instead of wrapping well defined c++ abstractions into a set of Rust classes,
+I plan to bind as much c/c++ as possible with bindgen then use quote and syn crates to generate idiomatic bindings.
+After this I plan to create a framework using the idiomatic bindings. The goal is to be able to develop feature additions to llama.cpp
+in Rust including but not limited to custom optimizers like lbfgs. Pull requests are welcome as is collaboration;
+for now email me at ward.joshua92@yahoo.com.
+
+further oxidation of the camelid may follow..
+---
 
 The rust bindings are mostly based on https://github.com/go-skynet/go-llama.cpp/
 
